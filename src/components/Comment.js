@@ -1,4 +1,6 @@
-import ButtonAction from "./ButtonAction"
+import ButtonDelete from "./ButtonDelete"
+import ButtonEdit from "./ButtonEdit"
+import ButtonReply from "./ButtonReply"
 
 
 const Comment = () => {
@@ -6,7 +8,7 @@ const Comment = () => {
   
     return (
     <div className="comment">
-        <ButtonAction />
+        <ButtonEdit />
     </div>
   )
 }
