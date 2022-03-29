@@ -1,0 +1,26 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+}
+.attribution { 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px; 
+  text-align: center;
+  a{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  } 
+  a:hover{
+    color: hsl(228, 60%, 33%);
+    font-size: 12px;
+  }
+}
