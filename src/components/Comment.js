@@ -1,7 +1,8 @@
 import ButtonDelete from "./ButtonDelete"
 import ButtonEdit from "./ButtonEdit"
 import ButtonReply from "./ButtonReply"
-import Submit from "./Submit"
+import ButtonSubmit from "./ButtonSubmit"
+import Likes from "./Likes"
 
 
 const Comment = () => {
@@ -9,10 +10,11 @@ const Comment = () => {
   
     return (
     <div className="comment">
-        <ButtonReply />
+        {/* <ButtonReply />
         <ButtonDelete />
-        <ButtonEdit />
-        <Submit text={'Reply'}/>
+        <ButtonEdit />*/
+        <ButtonSubmit text={'Reply'}/> }
+        <Likes score={10}/>
     </div>
   )
 }

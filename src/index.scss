@@ -58,6 +58,26 @@ h1{
   }
 }
 
+.likes{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 6.25rem;
+  color: $c-moderate-blue;
+  font-weight: 500;
+  background-color: $c-light-gray;  
+  border-radius: $border-radius-main;
+  user-select: none;
+  
+  .plus,
+  .minus{
+    border: none;
+    cursor: pointer;
+  }
+  .minus{
+    padding-bottom: .4rem;
+  }
+}
 //BUTTON HOVER STATES
 .button:hover *{
   cursor: pointer;
@@ -74,6 +94,9 @@ h1{
   opacity: .3;
 }
 
+.likes button:hover * {
+  fill: $c-moderate-blue;
+}
 //ATTRIBUTION STYLING
 .attribution { 
   position: fixed;

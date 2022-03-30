@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Submit = ({text}) => {
+const ButtonSubmit = ({text}) => {
   return (
       <div className='button button-submit'>
         <button >
@@ -12,8 +12,8 @@ const Submit = ({text}) => {
   )
 }
 
-Submit.propTypes = {
+ButtonSubmit.propTypes = {
     text: PropTypes.string.isRequired
 }
 
-export default Submit
+export default ButtonSubmit

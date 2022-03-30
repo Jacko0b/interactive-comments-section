@@ -55,6 +55,36 @@ h1 {
   border-radius: 0.5rem;
 }
 
+.likes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6.25rem;
+  color: #5457b6;
+  font-weight: 500;
+  background-color: #eaecf1;
+  border-radius: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.likes .plus,
+.likes .minus {
+  border: none;
+  cursor: pointer;
+}
+
+.likes .minus {
+  padding-bottom: .4rem;
+}
+
 .button:hover * {
   cursor: pointer;
   color: #c3c4ef;
@@ -69,6 +99,10 @@ h1 {
 .button-submit:hover * {
   cursor: pointer;
   opacity: .3;
+}
+
+.likes button:hover * {
+  fill: #5457b6;
 }
 
 .attribution {
