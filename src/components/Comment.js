@@ -8,7 +8,7 @@ const Comment = () => {
   
     return (
     <div className="comment">
-        <ButtonEdit />
+        <ButtonReply />
     </div>
   )
 }

@@ -1,4 +1,9 @@
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
 body {
+  background-color: #f5f6fa;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -8,6 +13,33 @@ body {
 h1 {
   width: 100%;
   text-align: center;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.button button {
+  color: #5457b6;
+  background-color: #f5f6fa;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 0 0 .5rem;
+  border: none;
+}
+
+.button:hover * {
+  cursor: pointer;
+  color: #c3c4ef;
+  fill: #c3c4ef;
 }
 
 .attribution {

@@ -1,4 +1,15 @@
+$c-very-light-gray: hsl(228, 33%, 97%);
+$c-light-gray: hsl(223, 19%, 93%);
+$c-moderate-blue: hsl(238, 40%, 52%);
+$c-light-grayish-blue: hsl(239, 57%, 85%);
+// $c-light-gray: hsl(223, 19%, 93%);
+
+*{
+  font-family: 'Rubik', sans-serif;
+}
+
 body{
+  background-color: $c-very-light-gray;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,6 +19,29 @@ h1{
   width: 100%;
   text-align: center;
 }
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  button{
+    color: $c-moderate-blue;
+    background-color: $c-very-light-gray;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 0 0 .5rem;
+    border: none;
+  }
+  
+}
+.button:hover *{
+  cursor: pointer;
+  color: $c-light-grayish-blue;
+  fill: $c-light-grayish-blue;
+}
+
+
 .attribution { 
   position: fixed;
   bottom: 0;
