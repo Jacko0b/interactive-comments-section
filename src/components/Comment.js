@@ -9,6 +9,8 @@ const Comment = () => {
     return (
     <div className="comment">
         <ButtonReply />
+        <ButtonDelete />
+        <ButtonEdit />
     </div>
   )
 }

@@ -2,7 +2,8 @@ $c-very-light-gray: hsl(228, 33%, 97%);
 $c-light-gray: hsl(223, 19%, 93%);
 $c-moderate-blue: hsl(238, 40%, 52%);
 $c-light-grayish-blue: hsl(239, 57%, 85%);
-// $c-light-gray: hsl(223, 19%, 93%);
+$c-soft-red: hsl(358, 79%, 66%);
+$c-pale-red: hsl(357, 100%, 86%);
 
 *{
   font-family: 'Rubik', sans-serif;
@@ -35,10 +36,19 @@ h1{
   }
   
 }
+.button-delete{
+  button{
+    color: $c-soft-red;
+  }
+}
 .button:hover *{
   cursor: pointer;
   color: $c-light-grayish-blue;
   fill: $c-light-grayish-blue;
+}
+.button-delete:hover *{
+  color: $c-pale-red;
+  fill: $c-pale-red;
 }
 
 
