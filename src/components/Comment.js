@@ -1,6 +1,7 @@
 import ButtonDelete from "./ButtonDelete"
 import ButtonEdit from "./ButtonEdit"
 import ButtonReply from "./ButtonReply"
+import Submit from "./Submit"
 
 
 const Comment = () => {
@@ -11,6 +12,7 @@ const Comment = () => {
         <ButtonReply />
         <ButtonDelete />
         <ButtonEdit />
+        <Submit text={'Reply'}/>
     </div>
   )
 }

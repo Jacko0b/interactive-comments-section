@@ -19,9 +19,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -38,6 +38,15 @@ h1 {
 
 .button-delete button {
   color: #ed6468;
+}
+
+.button-submit button {
+  color: #f5f6fa;
+  background-color: #5457b6;
+  padding: .8rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
 }
 
 .button:hover * {
