@@ -15,6 +15,12 @@ h1 {
   text-align: center;
 }
 
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,12 +66,17 @@ h1 {
   fill: #ffb8bb;
 }
 
+.button-submit:hover * {
+  cursor: pointer;
+  opacity: .3;
+}
+
 .attribution {
   position: fixed;
-  bottom: 0;
+  bottom: .5vh;
   left: 0;
   right: 0;
-  font-size: 11px;
+  font-size: 1.8vw;
   text-align: center;
 }
 
@@ -76,6 +87,5 @@ h1 {
 
 .attribution a:hover {
   color: #223687;
-  font-size: 12px;
 }
 /*# sourceMappingURL=index.css.map */
