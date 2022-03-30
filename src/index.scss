@@ -25,7 +25,13 @@ h1{
 .comment{
   display: flex;
 }
+.comment-heading{
+  display: flex;
 
+  img{
+    border-radius: 50%;
+  }
+}
 // BUTTONS
 .button {
   display: flex;
@@ -74,6 +80,7 @@ h1{
     border: none;
     cursor: pointer;
   }
+
   .minus{
     padding-bottom: .4rem;
   }
