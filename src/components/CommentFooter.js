@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types'
+import ButtonDelete from './ButtonDelete'
+import ButtonEdit from './ButtonEdit'
 import ButtonReply from './ButtonReply'
 import Likes from './Likes'
 
-const CommentFooter = ({score}) => {
+const CommentFooter = ({score, activeuser}) => {
   return (
     <div className='comment-footer'>
       <Likes score={score}/>
       <div className=' comment-footer-buttons'>
-      <ButtonReply />
-      <ButtonReply />
-
+        {activeuser ? <><ButtonDelete /><ButtonEdit /></> : <ButtonReply />}
       </div>
       
     </div>

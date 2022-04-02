@@ -8,22 +8,24 @@ import CommentHeading from "./CommentHeading"
 import Likes from "./Likes"
 
 
-const Comment = () => {
+const Comment = ({activeuser = false, imagePath, username, creationDate, text, score }) => {
     
   
     return (
-    <div className="comment">
-        {/*<ButtonReply />
-        <ButtonDelete />
-        <ButtonEdit /> */}
+    <div>
+      {/* 
+       
+       */}
 
-        <CommentHeading imagePath='./images/avatars/image-amyrobson.png' username='amyrobson' creationDate="1 month ago" activeuser={false}/>
-        {/* <ButtonSubmit text={'Reply'}/> 
-        <Likes score={10}/> */}
-        <CommentBody text={"Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well."}/>
-        <CommentFooter score={12}/>
+
+      <div className="comment">
+        <CommentHeading imagePath={imagePath} username={username} creationDate={creationDate} activeuser={activeuser}/>
+        <CommentBody text={text}/>
+        <CommentFooter score={score} activeuser= {activeuser}/>
+      </div>
+  
     </div>
-  )
+    )
 }
 
 export default Comment
