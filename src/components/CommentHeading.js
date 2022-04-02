@@ -1,23 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ButtonReply from './ButtonReply'
 
-const CommentHeading = ({image, username, creationDate}) => {
-    return (
+const CommentHeading = ({imagePath, username, creationDate, activeuser}) => {
+    
+
+  return (
     <div className='comment-heading'>
-      {/* 
-      TO-DO
-      PROBLEMS WITH UPLOADING IMAGE TO COMMENT-HEADING 
-      <img src={image} alt="user" /> */}
-      <span>{username}</span>
-      <span>{creationDate}</span>
+      <img src={imagePath} alt="user" />
+      <span className='username'>{username}</span>
+      <span className='creation-date'>{creationDate}</span>
+      {/* {activeuser? <span>activeUser</span> : <ButtonReply />} */}
     </div>
   )
 }
 
 CommentHeading.propTypes = {
-    image:PropTypes.string.isRequired,
+    imagePath:PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-    creationDate: PropTypes.string.isRequired
+    creationDate: PropTypes.string.isRequired,
+    activeuser: PropTypes.bool.isRequired
 }
 
 export default CommentHeading

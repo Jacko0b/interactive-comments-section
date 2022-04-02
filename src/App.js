@@ -4,8 +4,9 @@ import Comment from "./components/Comment";
 function App() {
   return (
     <div className="App">
-      <h1>Comment Section</h1>
       <Comment />
+      <Comment />
+
       <Attribution />
     </div>
   );

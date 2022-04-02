@@ -5,7 +5,7 @@ const Likes = ({score}) => {
   return (
     <div className='likes'>
         <button className='plus'><Plus /></button>
-        <span>{score}</span>
+        <span className='score'>{score}</span>
         <button className='minus'><Minus /></button> 
     </div>
   )
