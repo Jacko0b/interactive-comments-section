@@ -4,6 +4,7 @@ import ButtonReply from './ButtonReply'
 import ButtonDelete from './ButtonDelete'
 import ButtonEdit from './ButtonEdit'
 import You from './icons/You'
+import Image from './Image'
 
 const CommentHeading = ({imagePath, username, creationDate, activeuser}) => {
     
@@ -11,7 +12,8 @@ const CommentHeading = ({imagePath, username, creationDate, activeuser}) => {
   return (
     <div className='comment-heading'>
       <div className='comment-heading-body'>
-        <img src={imagePath} alt="user" />
+        <Image src={imagePath} alt={activeuser}/>
+        
         <span className='username'>{username}</span>
         {activeuser && <You />}
         <span className='creation-date'>{creationDate}</span>

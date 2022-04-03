@@ -26,6 +26,18 @@ p, span {
   color: #5457b6;
 }
 
+.add-comment img {
+  width: 32px;
+}
+
+.add-comment form textarea {
+  width: auto;
+}
+
+.add-comment .button {
+  width: 10%;
+}
+
 .comments {
   margin-left: auto;
   margin-right: auto;

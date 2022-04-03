@@ -30,6 +30,20 @@ p, span{
 .score{
   color: $c-moderate-blue;
 }
+.add-comment{
+  img{
+    width: 32px;
+  }
+  form{
+    textarea{
+      width: auto;
+
+    }
+  }
+  .button{
+    width: 10%;
+  }
+}
 .comments{
   
   margin-left: auto;
