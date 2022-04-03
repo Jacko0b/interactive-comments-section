@@ -26,15 +26,31 @@ p, span {
   color: #5457b6;
 }
 
+.comments {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.comment-block {
+  min-width: 18.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-block .border-line {
+  border-left: 2px solid #67727e;
+  opacity: .1;
+  padding-right: Min(2vw, 1rem);
+}
+
 .comment-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  max-width: 22rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1rem;
   background-color: #f5f6fa;
   border-radius: .6rem;
@@ -205,7 +221,7 @@ p, span {
   bottom: .5vh;
   left: 0;
   right: 0;
-  font-size: 1.8vw;
+  font-size: Clamp(0.8rem, 1.8vw, 1.2rem);
   text-align: center;
 }
 
@@ -219,11 +235,18 @@ p, span {
 }
 
 @media screen and (min-width: 46rem) {
-  .comment-section {
-    max-width: 46rem;
-    width: 80vw;
+  .App {
+    margin-top: 4rem;
   }
-  .comment-section .comment-border-score {
+  .comments {
+    max-width: Min(80vw, 46.25rem);
+    padding: 0;
+  }
+  .comment-block .border-line {
+    padding-right: Min(2vw, 2rem);
+    margin-left: Min(2vw, 2rem);
+  }
+  .comment-block .comment-section .comment-border-score {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -234,7 +257,7 @@ p, span {
     min-width: 40px;
     height: 100px;
   }
-  .comment-section .comment-heading {
+  .comment-block .comment-section .comment-heading {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -246,14 +269,14 @@ p, span {
             justify-content: space-between;
     gap: inherit;
   }
-  .comment-section .comment-heading .comment-heading-buttons {
+  .comment-block .comment-section .comment-heading .comment-heading-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: inherit;
   }
-  .comment-section .comment-footer .comment-footer-score,
-  .comment-section .comment-footer .comment-footer-buttons {
+  .comment-block .comment-section .comment-footer .comment-footer-score,
+  .comment-block .comment-section .comment-footer .comment-footer-buttons {
     display: none;
   }
 }

@@ -30,13 +30,27 @@ p, span{
 .score{
   color: $c-moderate-blue;
 }
+.comments{
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.comment-block{
+  min-width:18.25rem;
+  display: flex;
+  .border-line{
+    border-left: 2px solid $c-grayish-blue;
+    opacity: .1;
+    padding-right: Min(2vw, 1rem);
+  }
+}
+
 .comment-section{
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  max-width: 22rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1rem;
   background-color: $c-very-light-gray;
   border-radius: .6rem;
@@ -185,7 +199,7 @@ p, span{
   bottom: .5vh;
   left: 0;
   right: 0;
-  font-size: 1.8vw;
+  font-size: Clamp(.8rem,1.8vw,1.2rem);
   text-align: center;
   a{
     color: hsl(228, 45%, 44%);
@@ -198,11 +212,20 @@ p, span{
 }
 
 @media screen and (min-width: 46rem) {
+  .App{
+    margin-top: 4rem;
+  }
+  .comments{
+    max-width:Min(80vw, 46.25rem) ;
+    padding: 0;
+  }
   
-
-  .comment-section{
-    max-width: 46rem;
-    width: 80vw;
+  .comment-block{
+    .border-line{
+      padding-right: Min(2vw, 2rem);
+      margin-left: Min(2vw, 2rem);
+    }
+.comment-section{
     
     //Comment
 
@@ -237,6 +260,8 @@ p, span{
       }
     }
   }
+  }
+  
   
   
   
