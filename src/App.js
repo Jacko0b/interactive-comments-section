@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Comment 
-      activeuser={false} 
+      activeuser={true} 
       imagePath={"./images/avatars/image-amyrobson.png"} 
       username={"amyrobson"} 
       creationDate={"1 month ago"} 

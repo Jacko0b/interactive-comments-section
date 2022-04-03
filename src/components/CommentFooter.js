@@ -7,11 +7,10 @@ import Likes from './Likes'
 const CommentFooter = ({score, activeuser}) => {
   return (
     <div className='comment-footer'>
-      <Likes score={score}/>
+      <Likes className='comment-footer-score'  score={score}/>
       <div className=' comment-footer-buttons'>
         {activeuser ? <><ButtonDelete /><ButtonEdit /></> : <ButtonReply />}
       </div>
-      
     </div>
   )
 }

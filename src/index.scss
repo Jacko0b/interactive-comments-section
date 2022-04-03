@@ -13,7 +13,9 @@ $border-radius-main: .5rem;
   margin: 0;
   padding: 0;
 }
-
+.hidden{
+  display: none;
+}
 body{
   background-color: $c-light-gray;
   box-sizing: border-box;
@@ -28,49 +30,79 @@ p, span{
 .score{
   color: $c-moderate-blue;
 }
-.comment{
+.comment-section{
   display: flex;
-  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-  background-color: $c-very-light-gray;
   max-width: 22rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-}
-//COMMENT HEADING 
-.comment-heading{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  .username{
-    font-weight: 700;
-    color: $c-dark-blue;
-  }
+  background-color: $c-very-light-gray;
+  border-radius: .6rem;
 
-  .creation-date{
-    
-  }
-
-  img{
-    border-radius: 50%;
-    height: 2rem;
-  }
-  
-}
-//COMMENT BOPDY
-
-//COMMENT FOOTER 
-.comment-footer{
-  display: flex;
-  justify-content: space-between;
-  
-  .comment-footer-buttons{
+  .comment{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 1rem;    
+  }
+
+  .comment-border-score{
+    display: none;
+  }
+  
+  //COMMENT HEADING 
+  .comment-heading{
+
+    .comment-heading-body{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .username{
+        font-weight: 700;
+        color: $c-dark-blue;
+      }
+      img{
+        border-radius: 50%;
+        height: 2rem;
+      }
+      .you-icon {
+        background-color: $c-moderate-blue;
+        display: flex;
+        align-items: center;
+        padding: .1rem .4rem;
+        border-radius: .2rem;
+        *{
+          font-size: .8rem;
+          color: $c-white;
+        }
+      }
+    }
+    
+    .comment-heading-buttons{
+      display: none;
+    }
+  }
+  
+  //COMMENT BODY
+  //COMMENT FOOTER 
+  .comment-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .comment-footer-buttons{
+      display: flex;
+      gap: 1rem;
+    }
   }
 }
+
+
+
+
+
+
+
 
 // BUTTONS
 .button {
@@ -109,12 +141,14 @@ p, span{
   justify-content: space-around;
   align-items: center;
   width: 6.25rem;
+  height: 2rem;
   color: $c-moderate-blue;
   font-weight: 500;
   background-color: $c-light-gray;  
   border-radius: $border-radius-main;
   user-select: none;
   
+
   .plus,
   .minus{
     border: none;
@@ -161,4 +195,49 @@ p, span{
     color: hsl(228, 60%, 33%);
     
   }
+}
+
+@media screen and (min-width: 46rem) {
+  
+
+  .comment-section{
+    max-width: 46rem;
+    width: 80vw;
+    
+    //Comment
+
+    //Comment Border Likes
+    .comment-border-score{
+      display: flex;
+      flex-flow: column;
+      min-width: 40px ;
+      height:100px ;
+    }
+
+    //Comment Heading
+    .comment-heading{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: inherit;
+
+      .comment-heading-buttons{
+        display: flex;
+        gap: inherit;
+      }
+    }
+
+    //Comment Body
+    //Comment Footer
+    .comment-footer{
+    
+      .comment-footer-score,
+      .comment-footer-buttons{
+        display: none;
+      }
+    }
+  }
+  
+  
+  
 }

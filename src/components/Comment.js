@@ -12,11 +12,8 @@ const Comment = ({activeuser = false, imagePath, username, creationDate, text, s
     
   
     return (
-    <div>
-      {/* 
-       
-       */}
-
+    <div className="comment-section">
+      <Likes className={'comment-border-score'}score={score}/>
 
       <div className="comment">
         <CommentHeading imagePath={imagePath} username={username} creationDate={creationDate} activeuser={activeuser}/>
