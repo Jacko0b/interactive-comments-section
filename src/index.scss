@@ -174,6 +174,20 @@ p, span{
     padding-bottom: .4rem;
   }
 }
+textarea{
+  outline: none;
+  background-color: inherit;
+  width: 100%;
+  min-height: 4rem;
+  font-size: 1rem;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  border: 1px solid $c-light-grayish-blue;
+  resize: none;
+}
+textarea:hover, textarea:active{
+  border: 1px solid $c-dark-blue;
+}
 .add-comment-block{
   .add-comment-section{
     width: 100%;
@@ -181,12 +195,6 @@ p, span{
     img{
       width: 32px;
     } 
-    textarea{
-      width: 30%;
-    }
-    .button{
-      width: 10%;
-    }
   }
 }
 //BUTTON HOVER STATES

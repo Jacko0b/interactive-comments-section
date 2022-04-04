@@ -196,6 +196,22 @@ p, span {
   padding-bottom: .4rem;
 }
 
+textarea {
+  outline: none;
+  background-color: inherit;
+  width: 100%;
+  min-height: 4rem;
+  font-size: 1rem;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  border: 1px solid #c3c4ef;
+  resize: none;
+}
+
+textarea:hover, textarea:active {
+  border: 1px solid #324152;
+}
+
 .add-comment-block .add-comment-section {
   width: 100%;
   display: -webkit-box;
@@ -205,14 +221,6 @@ p, span {
 
 .add-comment-block .add-comment-section img {
   width: 32px;
-}
-
-.add-comment-block .add-comment-section textarea {
-  width: 30%;
-}
-
-.add-comment-block .add-comment-section .button {
-  width: 10%;
 }
 
 .button:hover * {
