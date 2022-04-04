@@ -35,7 +35,7 @@ p, span{
   
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
+  padding: Min(2rem, 5%);
 }
 
 .comment-block{
@@ -45,9 +45,10 @@ p, span{
     border-left: 2px solid $c-grayish-blue;
     opacity: .1;
     padding-right: Min(2vw, 1rem);
-  }
-  .border-line :last-of-type{
     
+  }
+  .border-line:last-of-type{
+    margin-bottom: 1rem;
   }
 }
 
