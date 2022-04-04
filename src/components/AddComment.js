@@ -10,10 +10,17 @@ const AddComment = ({imagePath, username, reply=false}) => {
       {reply && <BorderLine />}
 
       <form className='add-comment-section comment-section'>
+        <Image src={imagePath} alt={username} />
+        <TextArea />
+        {reply ? <ButtonSubmit text={'Reply'} /> : <ButtonSubmit text={'Send'} />}
+        
+        <div className="add-comment-mobile-footer">
           <Image src={imagePath} alt={username} />
-          <TextArea />
           {reply ? <ButtonSubmit text={'Reply'} /> : <ButtonSubmit text={'Send'} />}
+        </div>
       </form>
+
+      
     </div>
   )
 }

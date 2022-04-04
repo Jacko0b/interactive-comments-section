@@ -1,18 +1,20 @@
-import { useRef, useState } from "react"
+import { useState } from "react"
 
 const TextArea = () => {
-    const textAreaRef = useRef<HTMLTextAreaElement>(null)
-    const [text, setText] = useState('adada');
+    const [text, setText] = useState('');
 
-    const onChangeHandler = () =>{}
+    const onChangeHandler = (e) => {
+        const target = e.target ? e.target : e
+        setText(target.value)
+        target.style.height = `auto`
+        target.style.height = `${target.scrollHeight}px`
+    }
     return (
     <textarea 
     required
+    placeholder="Add a comment..."
     value={text}
-    onChange={(e) => {
-        setText(e.target.value)
-        e.style.height=e.target.scrollHeight
-    }}
+    onChange={(e) => onChangeHandler(e)}
     />
     )
 }

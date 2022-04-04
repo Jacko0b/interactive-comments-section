@@ -46,6 +46,9 @@ p, span{
     opacity: .1;
     padding-right: Min(2vw, 1rem);
   }
+  .border-line :last-of-type{
+    
+  }
 }
 
 .comment-section{
@@ -175,9 +178,10 @@ p, span{
   }
 }
 textarea{
+  align-self: center;
   outline: none;
   background-color: inherit;
-  width: 100%;
+  width: 90%;
   min-height: 4rem;
   font-size: 1rem;
   padding: .6rem 1rem;
@@ -189,12 +193,30 @@ textarea:hover, textarea:active{
   border: 1px solid $c-dark-blue;
 }
 .add-comment-block{
+
   .add-comment-section{
     width: 100%;
     display: flex;
+    flex-direction: column;
     img{
+      display: none;
       width: 32px;
     } 
+    .button{
+      display: none;
+    }
+  }
+
+  .add-comment-mobile-footer{
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 32px;
+      display: block;
+    } 
+    .button{
+      display: block;
+    }
   }
 }
 //BUTTON HOVER STATES
@@ -285,8 +307,24 @@ textarea:hover, textarea:active{
     }
   }
   }
-  
-  
+  textarea{
+    width: 100%;
+  }
+  .add-comment-block{
+    .add-comment-section{
+      flex-direction: row;
+      img{
+        width: 32px;
+        display: block;
+      } 
+      .button{
+        display: block;
+      }
+    }
+    .add-comment-mobile-footer{
+      display: none;
+    }
+  }
   
   
 }
