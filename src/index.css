@@ -201,18 +201,24 @@ p, span {
 }
 
 textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   outline: none;
   background-color: inherit;
-  width: 90%;
-  min-height: 4rem;
+  width: 100%;
+  min-height: 6rem;
   font-size: 1rem;
   padding: .6rem 1rem;
   border-radius: .5rem;
   border: 1px solid #c3c4ef;
   resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
 }
 
 textarea:hover, textarea:active {
@@ -339,9 +345,6 @@ textarea:hover, textarea:active {
   .comment-block .comment-section .comment-footer .comment-footer-score,
   .comment-block .comment-section .comment-footer .comment-footer-buttons {
     display: none;
-  }
-  textarea {
-    width: 100%;
   }
   .add-comment-block .add-comment-section {
     -webkit-box-orient: horizontal;

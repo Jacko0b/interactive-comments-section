@@ -179,16 +179,20 @@ p, span{
   }
 }
 textarea{
+  box-sizing: border-box;
   align-self: center;
   outline: none;
   background-color: inherit;
-  width: 90%;
-  min-height: 4rem;
+  width: 100%;
+  min-height: 6rem;
   font-size: 1rem;
   padding: .6rem 1rem;
   border-radius: .5rem;
   border: 1px solid $c-light-grayish-blue;
   resize: none;
+}
+textarea::-webkit-scrollbar{
+  display: none;
 }
 textarea:hover, textarea:active{
   border: 1px solid $c-dark-blue;
@@ -199,6 +203,7 @@ textarea:hover, textarea:active{
     width: 100%;
     display: flex;
     flex-direction: column;
+    
     img{
       display: none;
       width: 32px;
@@ -308,9 +313,7 @@ textarea:hover, textarea:active{
     }
   }
   }
-  textarea{
-    width: 100%;
-  }
+
   .add-comment-block{
     .add-comment-section{
       flex-direction: row;
