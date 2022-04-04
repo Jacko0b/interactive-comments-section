@@ -12,7 +12,7 @@ const CommentHeading = ({imagePath, username, creationDate, activeuser}) => {
   return (
     <div className='comment-heading'>
       <div className='comment-heading-body'>
-        <Image src={imagePath} alt={activeuser}/>
+        <Image src={imagePath} alt={username}/>
         
         <span className='username'>{username}</span>
         {activeuser && <You />}

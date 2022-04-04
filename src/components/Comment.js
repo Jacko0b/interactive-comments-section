@@ -10,14 +10,13 @@ import You from "./icons/You"
 import Likes from "./Likes"
 
 
-const Comment = ({activeuser = false, imagePath, username, creationDate, text, score, reply=0 }) => {
+const Comment = ({activeuser = false, imagePath, username, creationDate, text, score, reply = false }) => {
   
-
     return (
       <div className="comment-block">
-        {reply > 0 && <BorderLine />} 
-        <div className="comment-section">
 
+        { reply && <BorderLine />} 
+        <div className="comment-section">
           <Likes className={'comment-border-score'} score={score}/>
           <div className="comment">
 

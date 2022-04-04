@@ -26,18 +26,6 @@ p, span {
   color: #5457b6;
 }
 
-.add-comment img {
-  width: 32px;
-}
-
-.add-comment form textarea {
-  width: auto;
-}
-
-.add-comment .button {
-  width: 10%;
-}
-
 .comments {
   margin-left: auto;
   margin-right: auto;
@@ -206,6 +194,25 @@ p, span {
 
 .likes .minus {
   padding-bottom: .4rem;
+}
+
+.add-comment-block .add-comment-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-comment-block .add-comment-section img {
+  width: 32px;
+}
+
+.add-comment-block .add-comment-section textarea {
+  width: 30%;
+}
+
+.add-comment-block .add-comment-section .button {
+  width: 10%;
 }
 
 .button:hover * {
